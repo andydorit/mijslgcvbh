@@ -1,0 +1,73 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+Frame.Position = UDim2.new(0.334963322, 0, 0.407862425, 0)
+Frame.Size = UDim2.new(0, 305, 0, 183)
+Frame.Active = true
+Frame.Draggable = true
+
+UICorner.Parent = Frame
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(136, 136, 136)
+TextButton.Position = UDim2.new(0.206557378, 0, 0.732240498, 0)
+TextButton.Size = UDim2.new(0, 176, 0, 39)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "ESP"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 40.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/andydorit/safadfased/main/sdfsdgdfvbc%20x'))()
+end)
+
+UICorner_2.Parent = TextButton
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 3.000
+TextLabel.Position = UDim2.new(-0.00274160504, 0, -0.001973629, 0)
+TextLabel.Size = UDim2.new(0, 305, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "misglick.exe"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 50.000
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(136, 136, 136)
+TextButton_2.Position = UDim2.new(0.206557378, 0, 0.39344269, 0)
+TextButton_2.Size = UDim2.new(0, 176, 0, 39)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "AIMBOT"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 40.000
+TextButton_2.MouseButton1Down:connect(function()
+	getgenv().AimPart = "Head" -- For R15 Games: {UpperTorso, LowerTorso, HumanoidRootPart, Head} | For R6 Games: {Head, Torso, HumanoidRootPart}
+	getgenv().AimlockToggleKey = "Y" -- Toggles Aimbot On/Off 
+	getgenv().AimRadius = 50 -- How far away from someones character you want to lock on at
+	getgenv().ThirdPerson = false -- Locking onto someone in your Third Person POV
+	getgenv().FirstPerson = true -- Locking onto someone in your First Person POV
+	getgenv().TeamCheck = false -- Check if Target is on your Team (True means it wont lock onto your teamates, false is vice versa) (Set it to false if there are no teams)
+	getgenv().PredictMovement = true -- Predicts if they are moving in fast velocity (like jumping) so the aimbot will go a bit faster to match their speed 
+	getgenv().PredictionVelocity = 10 -- The speed of the PredictMovement feature 
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/andydorit/gitlohcvbn/main/bypassesrxvcb"))()
+end)
+
+UICorner_3.Parent = TextButton_2
